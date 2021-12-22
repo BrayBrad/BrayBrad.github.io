@@ -569,26 +569,6 @@ img#deliveroo{
   .loafContactCards, .aboutMapHeadings, .ourStoresAbout{
     display: none;
   }
-  #aboutUsBakehouse{
-    width: 90%;
-    font-size: 4vw;
-  }
-  .loafAbout1Aside, .loafAbout2Aside, .loafAbout1Aside2, .loafAbout2Aside2{
-    padding: 0;
-    font-size: 4vw;
-  }
-  #aboutUsTitle{
-    font-size: 8vw;
-  }
-  #aboutUsBelow{
-    font-size: 5vw;
-  }
-  .loafAbout2Aside2{
-    margin-bottom: -50px;
-  }
-  #loafAbout1, #loafAbout2{
-    min-width: 80vw;
-  }
 }
 @-webkit-keyframes fade {
   from {opacity: 0}
