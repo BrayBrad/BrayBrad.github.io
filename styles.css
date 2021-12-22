@@ -562,11 +562,13 @@ img#deliveroo{
     position: absolute;
     top: 18px;
     right: 50px;
+    border-radius: 5px;
   }
   #loafInstagram{
     position: absolute;
     top: 18px;
     right: 10px;
+    border-radius: 5px;
   }
   .loafContactCards, .aboutMapHeadings, .ourStoresAbout{
     display: none;
