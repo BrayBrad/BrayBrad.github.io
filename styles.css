@@ -1,0 +1,590 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.mobileNav{
+  display: none;
+}
+.homeBody{
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+img#loafLogo{
+  width: 400px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255, 0.85);
+  padding: 20px 100px;
+  outline: 4px solid rgba(71, 81, 85, 0.85);
+  outline-offset: -10px;
+}
+img#loafBackground{
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.75;
+  z-index: -100;
+}
+img#loafCakeBackground{
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  object-fit: cover;
+  opacity: 0.75;
+  z-index: -100;
+}
+img#loafBackgroundAbout{
+  width: 1920px;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  object-fit: cover;
+  opacity: 0.75;
+  z-index: -100;
+}
+.navbar{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navbarUl{
+  position: fixed;
+  top: 60%;
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+  background-color: rgba(255,255,255, 0.85);
+  outline: 2px solid rgba(71, 81, 85, 0.85);
+  outline-offset: -5px;
+  padding: 18px 0px;
+}
+.navbarLi{
+  display: inline;
+  border-right: 2px solid rgba(71, 81, 85, 0.85);
+}
+.navbarLi a{
+  padding: 18px 50px;
+  font-family: 'Libre Baskerville', serif;
+  text-decoration: none;
+  color: rgba(71, 81, 85, 0.85);
+}
+.navbarLi:last-child{
+  border-right: none;
+}
+.navbarLi:hover{
+  text-decoration: underline;
+}
+.aboutBody, .breadBody{
+  margin-top: -16px;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow-x: hidden;
+}
+img#loafTopLeftLogo{
+  width: 180px;
+  height: auto;
+  padding: 10px 10px;
+  vertical-align: middle;
+}
+.topNavbar{
+  background-color: rgba(255,255,255, 0.85);
+  text-align: center;
+}
+.topNavbarUl{
+  border-bottom: 2px solid rgba(71, 81, 85, 0.85);
+}
+.topNavbarLi{
+  list-style-type: none;
+  display: inline;
+}
+.topNavbarLi a{
+  margin: 0;
+  padding: 35px 50px;
+  font-family: 'Libre Baskerville', serif;
+  text-decoration: none;
+  color: rgba(71, 81, 85, 0.85);
+}
+.topNavbarLi a:hover{
+  text-decoration: underline;
+}
+.navbarLi#aboutImg{
+  padding: 0;
+}
+.current{
+  background-color: rgba(71, 81, 85, 0.18);
+}
+.aboutBox{
+  position: relative;
+  z-index: -10;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(255,255,255, 0.85);
+  outline: 4px solid rgba(71, 81, 85, 0.85);
+  text-align: center;
+}
+#aboutUsTitle{
+  padding-top: 15px;
+}
+#aboutUsTitle, #aboutUsBelow{
+  text-align: center;
+  color: rgba(71, 81, 85, 0.85);
+}
+#aboutUsBelow{
+  font-weight: bold;
+}
+#loafAbout1{
+  min-width: 300px;
+  width: 25vw;
+  padding-bottom: 10px;
+}
+#loafAbout2{
+  min-width: 300px;
+  width: 25vw;
+  margin-bottom: -10px;
+}
+.loafAbout1Aside2, .loafAbout2Aside2{
+  list-style-type: circle;
+  list-style-position: inside;
+  line-height: 1;
+}
+#loafAbout2Aside, #loafAbout1Aside{
+  padding-bottom: 20px;
+  line-height: 1;
+}
+#aboutUsBakehouse{
+  margin: auto;
+  width: 60%;
+  padding-bottom: 15px;
+}
+#googleMapsRidgeway, #googleMapsDowningStreet, #loafBakeryFourMarks, #loafBakeryGodalming{
+  width: 35vw;
+  height: 40vh;
+  min-height: 300px;
+  border: 2px solid rgba(71, 81, 85, 0.85);
+}
+.loafContactCards {
+  position: relative;
+  width: 60vw;
+  margin: auto;
+}
+.loafContacts{
+  display: none;
+}
+.loafContacts:first-child{
+  display: block;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 10px;
+  border-radius: 100%;
+}
+.prev{
+  left: 10px;
+  border-radius: 100%;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(71, 81, 85, 0.85);
+  color: white;
+}
+.active, .mapHeadings:hover {
+  background-color: rgba(71, 81, 85, 0.18);
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mapHeadings{
+  border: 2px solid rgba(71, 81, 85, 0.85);
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.contactInfo{
+  float: left;
+  width: 15vw;
+  margin-top: 5vh;
+}
+.aboutMapHeadings{
+  text-align: center;
+}
+#everydayClassics{
+  font-size: 1.8rem;
+  margin-bottom: -10px;
+}
+#everydayClassicsDesc{
+  font-size: 0.9rem;
+  line-height: 1;
+}
+.everydayRows{
+  display: inline-block;
+  width: 22%;
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+#sourdoughDesc{
+  font-size: 0.9rem;
+  width: 60%;
+  margin: auto;
+}
+.sourdoughRows{
+  display: inline-block;
+  width: 22%;
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+#whatIsTitle{
+  font-size: 1.4rem;
+}
+#whatIsDesc{
+  font-size: 0.85rem;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 2;
+  margin-top: -20px;
+}
+.sourdoughImages{
+  width: 250px;
+  height: auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#cakesTitle{
+  padding-top: 15px;
+  margin-bottom: -10px;
+  color: rgba(71, 81, 85, 0.85);
+}
+#cakesDesc{
+  color: rgba(71, 81, 85, 0.85);
+  font-weight: bold;
+}
+#cakesDescBelow{
+  width: 70%;
+  margin: auto;
+}
+#coffeeDesc{
+  font-size: 0.8rem;
+}
+.cakesRows{
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  font-size: 0.9rem;
+  position: relative;
+  padding-bottom: 40px;
+}
+.cakeImages{
+  margin: auto;
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid black;
+}
+.belowCaption{
+  margin-left: 48px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+}
+.cakesRows:hover .cakeImages, .breakfastRows:hover .breakfastImages, .lunchRows:hover .lunchImages{
+  opacity: 0.4;
+}
+.cakesRows:hover .belowCaption, .breakfastRows:hover .belowCaptionBreakfast, .lunchRows:hover .belowCaptionLunch{
+  opacity: 1;
+}
+.cakeText{
+  background-color: rgba(255,255,255, 0.85);
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  color: black;
+  font-size: 16px;
+  padding: 10px 0px;
+  width: 250px;
+}
+#gateuxCupcakesTitle{
+  margin-top: -10px;
+  font-size: 1.8rem;
+}
+#gateuxCupcakesDesc{
+  font-size: 0.9rem;
+  margin-top: -20px;
+}
+#gateuxCupcakesBelow{
+  font-size: 0.9rem;
+}
+#gateuxCupcakeOrders{
+  font-size: 0.7rem;
+}
+.breakfastRows{
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  font-size: 0.9rem;
+  position: relative;
+  padding-bottom: 40px;
+}
+.breakfastImages{
+  margin: auto;
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid black;
+}
+.belowCaptionBreakfast{
+  margin-left: 48px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+}
+.breakfastColumns{
+  width: 80%;
+  margin: auto;
+}
+#smoothieDesc{
+  font-size: 0.7rem;
+}
+#lunchBelow{
+  width: 70%;
+  margin: auto;
+  font-weight: bold;
+  color: rgba(71, 81, 85, 0.85);
+  margin-top: -10px;
+}
+.lunchRows{
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  font-size: 0.9rem;
+  position: relative;
+  padding-bottom: 40px;
+}
+.lunchImages{
+  margin: auto;
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 2px solid black;
+}
+.belowCaptionLunch{
+  margin-left: 23px;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+}
+#lunchTextOne{
+  width: 70%;
+  margin: auto;
+  color: rgba(71, 81, 85, 0.85);
+  margin-top: -10px;
+}
+#lunchTextTwo{
+  color: rgba(71, 81, 85, 0.85);
+}
+#lunchTextThree{
+  color: rgba(71, 81, 85, 0.85);
+  line-height: 2;
+}
+.contactCenter{
+  float: left;
+  width: 10vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 1vw;
+}
+img#deliveroo{
+  width: 75px;
+  margin-bottom: -10px;
+}
+#spacers{
+  width: 65vw;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border: none;
+}
+#contactBelow{
+  font-weight: bold;
+  color: rgba(71, 81, 85, 0.85);
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+#visitMaps{
+  width: 35vw;
+  height: 50vh;
+  min-width: 200px; 
+  min-height: 550px;
+  border: 2px solid rgba(71, 81, 85, 0.85);
+}
+@media screen and (max-width: 430px){
+  .navbar{
+    display: none;
+  }
+  .topNavbar{
+    display: none;
+  }
+  img#loafLogo{
+    max-width: 50vw;
+    position: fixed;
+    top: 50%;
+    background-color: rgba(255,255,255, 0.85);
+    padding: 20px 60px;
+    outline: 4px solid rgba(71, 81, 85, 0.85);
+    outline-offset: -10px;
+    z-index: -100;
+  }
+  .mobileNav{
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255,255,255, 0.95);
+    border-bottom: 4px solid rgba(71, 81, 85, 0.85);
+  }
+  #mobileLoafLogo{
+    width: 120px;
+    padding: 7px 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  .aboutBody, .breadBody{
+    margin: 0;
+  }
+  .container {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 20px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(71, 81, 85, 0.85);
+    margin: 6px 0;
+    transition: 0.3s;
+  }
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 4px);
+    transform: rotate(-45deg) translate(-3px, 4px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -10px);
+    transform: rotate(45deg) translate(-8px, -10px);
+  }
+  #myLinks{
+    display: none;
+    margin-top: 6px;
+    padding: 0;
+    z-index: 300;
+  }
+  #myLinks a{
+    display: block;
+    background-color: rgb(0,0,0);
+    background-color: rgba(255,255,255, 1);
+    overflow-y: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    border-bottom: 2px solid rgba(71, 81, 85, 0.1);
+    z-index: 300;
+  }
+  #myLinks a:hover{
+    text-decoration: underline;
+  }
+  #myLinks a:last-child{
+    border-bottom: 2px solid rgba(71, 81, 85, 0.85);
+  }
+  #loafLocations{
+    position: absolute;
+    top: 18px;
+    right: 75px;
+  }
+  #loafFacebook{
+    position: absolute;
+    top: 18px;
+    right: 55px;
+  }
+  #loafInstagram{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+  }
+}
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}

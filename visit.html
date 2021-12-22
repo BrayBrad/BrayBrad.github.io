@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit | Loaf Bakery</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <script src="/loaf.js"></script>
+</head>
+<body class="aboutBody">
+    <div>
+        <img src="/images/loafaboutbackground.PNG" id="loafBackgroundAbout">
+    </div>
+    <div class="topNavbar">
+        <ul class="topNavbarUl">
+            <li class="topNavbarLi" id="aboutImg"><a href="/index.html"><img src="/images/loafbakery.png" id="loafTopLeftLogo"></li></a>
+            <li class="topNavbarLi"><a id="home" href="/index.html">Home</a></li>
+            <li class="topNavbarLi"><a id="about" href="/about.html">About</a></li>
+            <li class="topNavbarLi"><a id="bread" href="/bread.html">Bread</a></li>
+            <li class="topNavbarLi"><a id="cakes" href="/cakes.html">Cakes</a></li>
+            <li class="topNavbarLi"><a id="breakfast" href="/breakfast.html">Breakfast</a></li>
+            <li class="topNavbarLi"><a id="lunch" href="/lunch.html">Lunch</a></li>
+            <li class="topNavbarLi"><a class="current" id="visitContact" href="/visit.html">Visit/Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobileNav">
+        <a href="/index.html"><img src="/images/loafbakery.png" id="mobileLoafLogo"></a>
+        <a href="https://www.facebook.com/loafbakery.uk" target="_blank"><img src="/images/loaffacebook.png" id="loafFacebook"></a>
+        <a href="https://www.instagram.com/loafbakery.uk/" target="_blank"><img src="/images/loafinstagram.png" id="loafInstagram"></a>
+        <div class="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="container" onclick="myFunctionTest(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <div id="myLinks" onclick="openNav()">
+                <a id="home" href="/index.html">Home</a>
+                <a id="about" href="/about.html">About</a>
+                <a id="bread" href="/bread.html">Bread</a>
+                <a id="cakes" href="/cakes.html">Cakes</a>
+                <a id="breakfast" href="/breakfast.html">Breakfast</a>
+                <a id="lunch" href="/lunch.html">Lunch</a>
+                <a id="visitContact" href="/visit.html">Visit/Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="aboutBox">
+        <h1 id="aboutUsTitle">- &nbsp V I S I T &nbsp / &nbsp C O N T A C T &nbsp U S &nbsp -</h1>
+        <p id="contactBelow">Come and find us!</p>
+            <div class="contactCenter">
+                <a href="https://deliveroo.co.uk/menu/camberley/wrecclesham/loaf-bakery-ridgway-road?geohash=gcp7mchv41f0" target="_blank"><img src="/images/deliveroo.png" id="deliveroo"></a>
+                <h3>Loaf Bakery, Ridgeway</h3>
+                <p>41 Ridgway Rd<br>Farnham<br>GU9 8NN</p>
+                <p>Phone Number: 01252 723279</p>
+                <p>Opening Times:<br> Monday - Friday: 7.30am - 2.30pm <br> Saturday: 8am - 2pm<br>Sunday: CLOSED</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.9122819601703!2d-0.7982866842412274!3d51.202267979586104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742d0a0195d78f%3A0x15905c516e01c7ba!2sLoaf%20Bakery%2C%20Ridgeway!5e0!3m2!1sen!2suk!4v1636927087169!5m2!1sen!2suk" id="visitMaps" allowfullscreen="" loading="lazy"></iframe>
+            <hr id="spacers">
+            <div class="contactCenter">
+                <a href="https://deliveroo.co.uk/menu/camberley/aldershot/loaf-ridgeway?day=tomorrow&geohash=gcp7q50gtr86&time=0845" target="_blank"><img src="/images/deliveroo.png" id="deliveroo"></a>
+                <h3>Loaf Bakery, Downing Street</h3>
+                <p>22 Downing St<br>Farnham<br>GU9 7PD</p>
+                <p>Phone Number: 01252 726004</p>
+                <p>Opening Times:<br> Monday - Friday: 8.30am - 2.30pm <br> Saturday: 8.30am - 2pm<br>Sunday: CLOSED</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.2788591761573!2d-0.801722048484461!3d51.21393843983774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48742dabc366af7f%3A0xb604445d267aa14!2sLoaf%20Bakery%2C%20Downing%20St!5e0!3m2!1sen!2suk!4v1636928148545!5m2!1sen!2suk" id="visitMaps" allowfullscreen="" loading="lazy"></iframe>
+            <hr id="spacers">
+            <div class="contactCenter">
+                <h3>Loaf Bakery, Four Marks</h3>
+                <p>3 Oak Green<br>Parade<br>Four Marks<br>Alton<br>GU34 5HQ</p>
+                <p>Phone Number: 01420 562449</p>
+                <p>Opening Times:<br> Monday - Friday: 7am - 2pm <br> Saturday: 8am - 2pm<br>Sunday: CLOSED</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.832156969786!2d-1.0455674484872306!3d51.11155684728829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48743c1339d857e7%3A0x670ba889eab82876!2sLoaf%20Bakery%2C%20Four%20Marks!5e0!3m2!1sen!2suk!4v1636928242649!5m2!1sen!2suk" id="visitMaps" allowfullscreen="" loading="lazy"></iframe>
+            <hr id="spacers">
+            <div class="contactCenter">
+                <h3>Loaf Bakery, Godalming</h3>
+                    <p>19 High St<br>Godalming<br>GU7 1AF</p>
+                    <p>Phone Number: 01483 416777</p>
+                <p>Opening Times:<br> Monday - Friday: 8am - 2pm <br> Saturday: 8am - 2pm<br>Sunday: CLOSED</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.812501912269!2d-0.6135972484852112!3d51.18567864189532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875d1d3cb5c3def%3A0x95302196188460a5!2sLoaf%20Bakery%2C%20Godalming%20GU7%201AU!5e0!3m2!1sen!2suk!4v1636928308062!5m2!1sen!2suk" id="visitMaps" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+</body>
+</html>
