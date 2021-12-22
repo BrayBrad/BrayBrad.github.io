@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread | Loaf Bakery</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <script src="/loaf.js"></script>
+</head>
+<body class="breadBody">
+    <div>
+        <img src="/images/loafbreadbackground.PNG" id="loafBackgroundAbout">
+    </div>
+    <div class="topNavbar">
+        <ul class="topNavbarUl">
+            <li class="topNavbarLi" id="aboutImg"><a href="/index.html"><img src="/images/loafbakery.png" id="loafTopLeftLogo"></li></a>
+            <li class="topNavbarLi"><a id="home" href="/index.html">Home</a></li>
+            <li class="topNavbarLi"><a id="about" href="/about.html">About</a></li>
+            <li class="topNavbarLi"><a class="current" id="bread" href="/bread.html">Bread</a></li>
+            <li class="topNavbarLi"><a id="cakes" href="/cakes.html">Cakes</a></li>
+            <li class="topNavbarLi"><a id="breakfast" href="/breakfast.html">Breakfast</a></li>
+            <li class="topNavbarLi"><a id="lunch" href="/lunch.html">Lunch</a></li>
+            <li class="topNavbarLi"><a id="visitContact" href="/visit.html">Visit/Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobileNav">
+        <img src="/images/loafbakery.png" id="mobileLoafLogo">
+        <a href="https://www.facebook.com/loafbakery.uk" target="_blank"><img src="/images/loaffacebook.png" id="loafFacebook"></a>
+        <a href="https://www.instagram.com/loafbakery.uk/" target="_blank"><img src="/images/loafinstagram.png" id="loafInstagram"></a>
+        <div class="topnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="container" onclick="myFunctionTest(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+            <div id="myLinks" onclick="openNav()">
+                <a id="home" href="/index.html">Home</a>
+                <a id="about" href="/about.html">About</a>
+                <a id="bread" href="/bread.html">Bread</a>
+                <a id="cakes" href="/cakes.html">Cakes</a>
+                <a id="breakfast" href="/breakfast.html">Breakfast</a>
+                <a id="lunch" href="/lunch.html">Lunch</a>
+                <a id="visitContact" href="/visit.html">Visit/Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="aboutBox">
+        <h1 id="aboutUsTitle">- &nbsp B R E A D &nbsp -</h1>
+        <p id="aboutUsBelow">Handmade overnight using  time honoured techniques  and the quality ingredients.<br>Delivered fresh each morning from our Farnham Bakehouse.</p>
+        <div class="everydayBread">
+            <p id="everydayClassics">E V E R Y D A Y &nbsp C L A S S I C S</p>
+            <p id="everydayClassicsDesc">Whether it's hot buttered toast, a bacon doorstep, or an irresistible lunchtime sandwich our classic bread, french sticks and rolls have it covered.</p>
+        </div>
+        <div class="everydayColumns">
+            <div class="everydayRows">
+                <img src="/images/whitebread.jpg" alt="" class="sourdoughImages">
+                <p><b>Classic white</b></p>
+                <p>Made with high quality flour from the respected Cotswold based Shipton Mill. </p>
+            </div>
+            <div class="everydayRows">
+                <img src="/images/maltedgran.jpg" alt="" class="sourdoughImages">
+                <p><b>Malted (Granary style)</b></p>
+                <p>A delicious blend of malted wheat flakes & malted barley added to wheat flour to give texture & flavour.</p>
+            </div>
+            <div class="everydayRows">
+                <img src="/images/multigrain.jpg" alt="" class="sourdoughImages">
+                <p><b>Multigrain</b></p>
+                <p>For those who love seeds and cereals to be a major part of their diet.  Malted wheat & barley flakes, sundflower seeds, millet & oats combined in a soft nutty textured loaf.</p>
+            </div>
+            <div class="everydayRows">
+                <img src="/images/wholemeal.jpg" alt="" class="sourdoughImages">
+                <p><b>Wholemeal stoneground</b></p>
+                <p>Our blend of wholemeal flour (for lightness) & stoneground wholemeal flour (for a 'rustic' texture) make this a light, flavour packed loaf.</p>
+            </div>
+        </div>
+        <div class="dailySpecials">
+            <p id="everydayClassics">W E E K L Y &nbsp S P E C I A L I T I E S</p>
+            <p id="everydayClassicsDesc">The Weekly Specials</p>
+        </div>
+        <div class="sourdoughColumns">
+            <div class="sourdoughRows">
+                <img src="/images/chia.jpg" alt="" class="sourdoughImages">
+                <p><b>Chia Bread</b></p>
+                <p>White bread with added 'superfood' chia seeds.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/bavrye.jpg" alt="" class="sourdoughImages">
+                <p><b>Bavarian Style Dark Rye</b></p>
+                <p>A dark and aromatic Bavarian style bread</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/multiseed.jpg" alt="" class="sourdoughImages">
+                <p><b>Multiseed</b></p>
+                <p>Pumpkin, linseed and sunflower seeds, wheat bran and oat flakes give an extra 'bite' to this darker style bread.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/spelthoney.jpg" alt="" class="sourdoughImages">
+                <p><b>Spelt & Honey</b></p>
+                <p>Rustic 100% spelt bread with flax and lupin seeds and honey.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/cornbread.jpg" alt="" class="sourdoughImages">
+                <p><b>Corn Bread</b></p>
+                <p>Maize and white wheat flours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/focca.jpg" alt="" class="sourdoughImages">
+                <p><b>Foccaccia</b></p>
+                <p>Italian 00 grade flour with olive oil and fresh rosemary</p>
+            </div>
+        </div>
+        <div class="sourdoughBread">
+            <p id="everydayClassics">S O U R D O U G H S</p>
+            <p id="everydayClassicsDesc">You can't cheat the process for an authentic sourdough ..... and our Bakehouse sourdough 'geeks' love the challenge each day.</p>
+            <p id="everydayClassicsDesc">Organic flour, long fermentation and their baking skill and obsession combine to create a truly individual loaf.</p>
+            <p id="sourdoughDesc">-</p>
+            <p id="sourdoughDesc">Every day of the week, to compliment our classic range, there is a sourdough or speciality bread on the shelves, Saturday brings an array of our most popular sourdoughs, as well as the latest innovations from our baking team.</p>
+            <br>
+            <p id="sourdoughDesc"><b>A few from our repertoire of over twenty sourdoughs ...</b></p>
+            <br>
+        </div>
+        <div class="sourdoughColumns">
+            <div class="sourdoughRows">
+                <img src="/images/carrotsesame.jpg" alt="" class="sourdoughImages">
+                <p><b>Carrot and Sesame Sourdough<br>(Yeast Free)</b></p>
+                <p>Toasted sesame seeds, white organic flour blened with dark rye flours, freshly grated carrot and malt.<br><br>Fermentation 42 - 50 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/levain.jpg" alt="" class="sourdoughImages">
+                <p><b>Levain - The classic french sourdough<br>(Yeast Free)</b></p>
+                <p>Organic white wheat blended with  light and dark rye flours to give extra 'tang' to this very individual flavoured loaf.<br><br>Fermentation 15 - 20 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/tuscansour.jpg" alt="" class="sourdoughImages">
+                <p><b>Tuscan Sourdough<br>(Yeast Free)</b></p>
+                <p>Organic white and light rye flours blended with Italian 00 grade flour, olive oil, sundried tomatoes and basil<br><br>Fermentation 42-50 hours</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/multigrainsour.jpg" alt="" class="sourdoughImages">
+                <p><b>Multigrain Sourdough<br>(Yeast Free)</b></p>
+                <p>A blend of malted wheat flakes, barley, sunflower seeds, millet and oats added to organic white wheat and dark rye flours.<br><br>Fermentation 36 - 40 hours</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/grandblanc.jpg" alt="" class="sourdoughImages">
+                <p><b>Grand Blanc<br>(Less than 1% Yeast)</b></p>
+                <p>Organic white flour and less than 1% yeast.<br><br>Fermentation 14 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/rusticsourfake.jpg" alt="" class="sourdoughImages">
+                <p><b>Rustic Sourdough<br>(Yeast Free)</b></p>
+                <p>Organic white wheat and dark spelt flour.<br><br>Fermentation 42 - 50 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/cheddarchilli.jpg" alt="" class="sourdoughImages">
+                <p><b>Chilli and Cheddar Sourdough</b></p>
+                <p>Organic white flour with mature Cheddar cheese, chilli, onion and yeast.<br><br>Fermentation 7 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/italiantable.jpg" alt="" class="sourdoughImages">
+                <p><b>Italian Table Bread<br>(Yeast Free)</b></p>
+                <p>Organic white and wholemeal flour, malt and olive oil.<br><br>Fermentaion 50 hours</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/toastedoat.jpg" alt="" class="sourdoughImages">
+                <p><b>Toasted Oat Sourdough<br>(Yeast Free)</b></p>
+                <p>Organic white flour blended with light rye and toasted oats.<br><br>Fermentation 42 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/100whitespelt.jpg" alt="" class="sourdoughImages">
+                <p><b>100% White Spelt Sourdough<br>(Less than 1% Yeast)</b></p>
+                <p>Organic white spelt flour. Less than 1% yeast.<br><br>Fermentation 4 hours.</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/granarysour.jpg" alt="" class="sourdoughImages">
+                <p><b>Granary Style Sourdough<br>(Less than 1% Yeast)</b></p>
+                <p>Malted grain flour and less than 1% yeast.<br><br>Fermentation 60 - 64 hours</p>
+            </div>
+            <div class="sourdoughRows">
+                <img src="/images/beerbread.jpg" alt="" class="sourdoughImages">
+                <p><b>Beer Bread<br>(Yeast Free)</b></p>
+                <p>Organic white and dark rye flours with Hogs Back TEA and their barley mash.<br><br>Fermentation 42 hours.</p>
+            </div>
+            <div class="whatIsSourdough">
+                <p id="whatIsTitle">W H A T &nbsp I S &nbsp S O U R D O U G H?</p>
+                <p id="whatIsDesc">Sourdough is believed to have first been discovered about 4000 years BC.<br>
+                    Made by the fermentation of the dough using naturally occurring lactobacilli and yeasts, the bread should have a mild sour taste and has better keeping qualities than other breads made without additives.<br>
+                    Our sourdough bread has a long, slow organic fermentation process and typically matures for an average of 36 hours before baking.  It is made simply from flour, water and salt.<br>
+                    In some breads we add seeds, fruit, vegetables, herbs or spices.  Our bread is made from all natural ingredients.
+                </p>
+                <br>
+                <p id="whatIsTitle">W H Y &nbsp S O U R D O U G H &nbsp B R E A D &nbsp I S &nbsp B E L I E V E D &nbsp T O &nbsp B E &nbsp G O O D &nbsp F O R &nbsp Y O U</p>
+                <p id="whatIsDesc">The prebiotic element helps support the gut microbiome (our internal eco-system).  Important nutrients such as iron, zinc and magnesium, antioxidants, folic acid and other B vitamins become easier for our bodies to absorb.<br>
+                    Studies have also shown that rye flour added to sourdough can help regulate blood sugar levels which help ward off diabetes.  Diabetics should note that sourdough can produce a lower surge in blood sugar than most other breads.
+                </p>
+                <br>
+                <p id="whatIsTitle">W H Y &nbsp I S &nbsp M A S S &nbsp P R O D U C E D &nbsp F A C T O R Y &nbsp B R E A D &nbsp D I F F E R E N T?</p>
+                <p id="whatIsDesc">
+                    Cheap industrially manufactured bread relies on enzymes, preservatives, emulsifiers and improvers to bake bread at speed.<br>
+                    To get the perfect loaf they add:<br>
+                    - Extra yeast
+                    <br>
+                    - Extra gluten
+                    <br>
+                    - Fat to improve crumb softness
+                    <br>
+                    - Reducing agents to help create more stretchy doughs
+                    <br>
+                    - Soya flour to add volume and softness
+                    <br>
+                    - Emulsifiers to produce bigger, softer loaves
+                    <br>
+                    - Retard staling preservatives to extend shelf life
+                    <br>
+                    - A wide variety of enzymes, legally defined as 'processing aids' which do not have to be declared on the label
+                    <br>
+                    - Sugar
+                    <br><br>
+                    These additives can also be to blame for some people's wheat intolerance.
+                </p>
+            </div>
+    </div>
+</body>
+</html>
