@@ -588,6 +588,9 @@ img#deliveroo{
   #loafAbout1, #loafAbout2{
     min-width: 80vw;
   }
+  .aboutBox{
+    z-index: -10;
+  }
 }
 @-webkit-keyframes fade {
   from {opacity: 0}
