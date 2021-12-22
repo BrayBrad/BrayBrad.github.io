@@ -581,6 +581,8 @@ img#deliveroo{
   }
   #aboutUsTitle{
     font-size: 8vw;
+    overflow: hidden;
+    white-space: nowrap;
   }
   #aboutUsBelow{
     font-size: 5vw;
